@@ -23,3 +23,7 @@ SELECT title, price FROM places
  -- 160203
 SELECT * FROM places
 WHERE price > 100
+
+-- 160204
+SELECT * FROM places
+WHERE city = 'Samui'
