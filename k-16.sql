@@ -92,3 +92,13 @@ ON likes.place = places.id
 LEFT JOIN users
 ON likes.user = users.id
 ORDER BY fan
+
+-- 160308
+SELECT users.name AS fan, title AS place, types.name FROM places
+INNER JOIN likes
+ON likes.place = places.id
+LEFT JOIN users
+ON likes.user = users.id
+INNER JOIN types
+ON places.type = types.id
+ORDER BY fan
