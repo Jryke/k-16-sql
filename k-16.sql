@@ -13,3 +13,6 @@ VALUES ('Amazing Villa by the Ocean', 150, 5, 'Phuket', 1, 2)
 -- 160104
 INSERT INTO likes (user, place)
 VALUES (1, 1)
+
+-- 160201
+SELECT * FROM places
