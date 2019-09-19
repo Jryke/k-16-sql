@@ -39,3 +39,7 @@ ORDER BY price
 -- 160207
 SELECT * FROM places
 WHERE title LIKE 'Amazing%'
+
+-- 160208
+SELECT id, title AS NAME, price AS AMOUNT, rating FROM places
+WHERE rating != 4
