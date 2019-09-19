@@ -16,3 +16,6 @@ VALUES (1, 1)
 
 -- 160201
 SELECT * FROM places
+
+-- 160202
+SELECT title, price FROM places
