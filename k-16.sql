@@ -65,4 +65,9 @@ ON places.host = users.id
 LEFT JOIN types
 ON places.type = types.id
 WHERE price > 40
-ORDER BY type
+ORDER BY TYPE
+
+-- 160304
+SELECT name, email, places.title, places.rating FROM users
+LEFT JOIN places
+ON users.id = places.host
