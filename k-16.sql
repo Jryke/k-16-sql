@@ -19,3 +19,7 @@ SELECT * FROM places
 
 -- 160202
 SELECT title, price FROM places
+
+ -- 160203
+SELECT * FROM places
+WHERE price > 100
