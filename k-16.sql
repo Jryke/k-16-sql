@@ -31,3 +31,7 @@ WHERE city = 'Samui'
 -- 160205
 SELECT * FROM places
 WHERE price BETWEEN 80 AND 150
+
+-- 160206
+SELECT title, price FROM places
+ORDER BY price
