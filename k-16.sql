@@ -76,3 +76,11 @@ ON users.id = places.host
 SELECT name, email, places.title, places.rating FROM users
 INNER JOIN places
 ON users.id = places.host
+
+-- 160306
+SELECT title, users.name AS fan FROM places
+LEFT JOIN likes
+ON likes.place = places.id
+LEFT JOIN users
+ON likes.user = users.id
+ORDER BY title
