@@ -43,3 +43,7 @@ WHERE title LIKE 'Amazing%'
 -- 160208
 SELECT id, title AS NAME, price AS AMOUNT, rating FROM places
 WHERE rating != 4
+
+-- 160209
+SELECT * FROM users
+WHERE email LIKE '%gmail%'
