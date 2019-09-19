@@ -57,3 +57,12 @@ ON places.type = types.id
 SELECT places.id, title, price, types.name FROM places
 LEFT JOIN types
 ON places.type = types.id
+
+-- 160303
+SELECT places.id, title, price, types.name, users.name, users.email FROM places
+LEFT JOIN users
+ON places.host = users.id
+LEFT JOIN types
+ON places.type = types.id
+WHERE price > 40
+ORDER BY type
