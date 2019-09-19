@@ -52,3 +52,8 @@ WHERE email LIKE '%gmail%'
 SELECT * FROM places
 LEFT JOIN types
 ON places.type = types.id
+
+-- 160302
+SELECT places.id, title, price, types.name FROM places
+LEFT JOIN types
+ON places.type = types.id
